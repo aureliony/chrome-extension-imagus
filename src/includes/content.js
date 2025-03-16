@@ -3525,19 +3525,19 @@
             if (key === cfg.keys.hz_preload) {
                 win.top.postMessage({ vdfDpshPtdhhd: "preload" }, "*");
             } else if (keywos === cfg.keys.hz_grants) {
-                var grants = cfg.grants || [];
-                grants = grants.filter((e) => e.url !== location.hostname);
-                var val = { url: location.hostname };
-                if (!e.shiftKey) val.op = "!";
-                else val.op = "~";
-                grants.push(val);
-                Port.send({
-                    cmd: "savePrefs",
-                    prefs: { grants: grants },
-                });
-                setTimeout(() => {
-                    Port.send({ cmd: "hello" });
-                }, 1000);
+                // var grants = cfg.grants || [];
+                // grants = grants.filter((e) => e.url !== location.hostname);
+                // var val = { url: location.hostname };
+                // if (!e.shiftKey) val.op = "!";
+                // else val.op = "~";
+                // grants.push(val);
+                // Port.send({
+                //     cmd: "savePrefs",
+                //     prefs: { grants: grants },
+                // });
+                // setTimeout(() => {
+                //     Port.send({ cmd: "hello" });
+                // }, 1000);
             } else if (key === cfg.keys.hz_toggle) {
                 if (win.sessionStorage.IMGS_suspend) {
                     delete win.sessionStorage.IMGS_suspend;
